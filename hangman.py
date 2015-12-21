@@ -61,7 +61,7 @@ def printMan(n):
 		print("  |  / \   ")
 		print("__|________")				
 def main():
-	print ("Hangman - World Geography Edition\n")
+	print("Hangman - World Geography Edition\n")
 	f = open("countries.txt")
 	countries = [line.strip() for line in open("countries.txt")]
 	f.close()
@@ -76,7 +76,7 @@ def main():
 			if i == " ":
 				current += " "
 			else:
-				current +="-"
+				current += "-"
 		print (current)
 		game = "Yes"
 		wrong = 0
