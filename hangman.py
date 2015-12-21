@@ -74,9 +74,9 @@ def main():
 		current = ""
 		for i in word:
 			if i == " ":
-				current+= " "
+				current += " "
 			else:
-				current+="-"
+				current +="-"
 		print (current)
 		game = "Yes"
 		wrong = 0
@@ -87,15 +87,15 @@ def main():
 				while guess in guesses:
 					print("You already guessed that letter!\n")
 					printMan(wrong)
-					print ("\n\nGuesses")
-					print (guesses)
+					print("\n\nGuesses")
+					print(guesses)
 					print("\n\n" + current)
 					guess = raw_input("\n\nGuess a letter or guess the word: ")
 					
 			if word == (guess.lower()):
 				word = word[:1].upper() + word[1:]
 				print("\n" + word)
-				print("You win!!!"+ "\n")
+				print("You win!!!" + "\n")
 				game = "NO"
 				play = raw_input("Would you like to play again(yes/no)?  ")
 				print("\n")
@@ -111,7 +111,7 @@ def main():
 					else:
 						new += current[i]
 				if current == new:
-					wrong+=1
+					wrong += 1
 				current = new
 				printMan(wrong)
 				print ("\n\nGuesses")
@@ -138,7 +138,7 @@ def main():
 				
 				
 			else:
-				wrong +=1
+				wrong += 1
 				printMan(wrong)
 				print ("\n\nGuesses")
 				print (guesses)
